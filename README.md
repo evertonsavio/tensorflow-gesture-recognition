@@ -16,7 +16,7 @@ docker run -d -p 3000:80 webserver-image:v1
 --------------------  
 ### Utilização  
 
-* A seguinte tea irá subir:  
+* A seguinte tela irá subir:  
 ![image info](./images/app.png)  
   
 * Para Iniciar o App, clicar no botão azul na aba superior "Inicar App".   
@@ -26,12 +26,13 @@ docker run -d -p 3000:80 webserver-image:v1
 >> The handpose package detects hands in an input image or video stream, and returns twenty-one 3-dimensional landmarks locating features within each hand. Such landmarks include the locations of each finger joint and the palm.   
   
 * Após a permissão a camera o modulo demora aproximadamente 12s para ficar pronto.   
+  
 ![image info](./images/carregando.png)   
-* QUando o modelo estiver pronto, será possíver ver um circulo vermelho na tela conforme imagem abaixo:  
+* Quando o modelo estiver pronto, será possíver ver um circulo vermelho na tela conforme imagem abaixo:  
 
 ![image info](./images/modelo.png)  
   
-*As predições Thumbs Up Thumbs Down estao prontas para serem feitas em Video.  
+* As predições Thumbs Up Thumbs Down estao prontas para serem feitas em Video.  
 ![image info](./images/predicao.png)  
    
  * Para fazer predições em imagens, no canto superior direito tem um botão para selecionar, clique em Imagem. Logo depois selecione sua imagem pelo botão "Escolher arquivo".
