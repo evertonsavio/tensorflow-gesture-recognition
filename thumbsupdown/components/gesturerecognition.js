@@ -105,7 +105,7 @@ async function main () {
   const estimateHands = async () => {
     ctx.clearRect (0, 0, config.video.width, config.video.height);
     resultLayer.innerText = '⭕';
-    infoText.innerText = `Predição: ⭕`;
+    infoText.innerText = `Modelo carregado -> Predição: ⭕`;
 
     const canvasimg = document.querySelector ('canvas');
     const canvasctx = canvasimg.getContext ('2d');
@@ -134,7 +134,7 @@ async function main () {
         }
       }
 
-      const est = GE.estimate (predictions[i].landmarks, 5.5);
+      const est = GE.estimate (predictions[i].landmarks, 6.5);
 
       if (est.gestures.length > 0) {
         let result = est.gestures.reduce ((p, c) => {
