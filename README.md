@@ -6,11 +6,11 @@
   
 * Caso queira usar por imagem docker, na pasta thumbsupdown executar o comando no terminal:   
 ```
-docker build -t webserver-image:v1 .  
+sudo docker build -t webserver-image:v1 .  
 ```
 * Em seguida rodar o comando:  
 ```
-docker run -d -p 3000:80 webserver-image:v1
+sudo docker run -d -p 3000:80 webserver-image:v1
 ```  
 * Abrir o navegador em localhost:3000  
 --------------------  
@@ -26,7 +26,7 @@ docker run -d -p 3000:80 webserver-image:v1
 > Mais informações sobre o modelo: https://blog.tensorflow.org/2020/03/face-and-hand-tracking-in-browser-with-mediapipe-and-tensorflowjs.html   
 >> The handpose package detects hands in an input image or video stream, and returns twenty-one 3-dimensional landmarks locating features within each hand. Such landmarks include the locations of each finger joint and the palm.   
   
-* Após a permissão a camera, o modulo demora aproximadamente 12s para ficar pronto.   
+* Após a permissão a camera, o modulo demora aproximadamente 12s para ficar pronto. Dependendo do navegador, sera necessario esperar um pouco mais.   
   
 ![image info](./images/carregando.png)   
 * Quando o modelo estiver pronto, será possíver ver um circulo vermelho na tela conforme imagem abaixo:  
