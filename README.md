@@ -17,6 +17,7 @@ docker run -d -p 3000:80 webserver-image:v1
 ### Utilização  
 
 * A seguinte tela irá subir:  
+  
 ![image info](./images/app.png)  
   
 * Para Iniciar o App, clicar no botão azul na aba superior "Inicar App".   
