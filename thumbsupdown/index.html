@@ -12,31 +12,34 @@
 </head>
 <body>
 
-
-<div class="container">
-<h1>Desafio: Thumbs Up! Thumbs down!</h1><button class="btn btn-primary active" onclick="iniciarApp()" id="btnApp">Iniciar App</button>
-<div class="btn-group btn-group-toggle" data-toggle="buttons">
+<nav class="navbar navbar-dark bg-dark"><h3>Desafio: Thumbs Up! Thumbs down!</h3><button class="btn btn-primary active" onclick="iniciarApp()" id="btnApp">Iniciar App</button><div class="btn-group btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-secondary active">
     <input type="radio" name="options" id="option1" autocomplete="off" checked> Video
   </label>
   <label class="btn btn-secondary">
     <input type="radio" name="options" id="option2" autocomplete="off"> Imagem
   </label>
-</div>
-<br><br/>
+</div></nav>
+<div class="container">
+
   <div class="row">
       <div class="col">
         <canvas id= "canvas" width="640" height="480" style="border:1px solid"></canvas>
-        <button class="btn"><input  type="file" id="fileinput" accept = "image/*">  
-        </button>
+        <button class="btn"><input  type="file" id="fileinput" accept = "image/*"></button>
       </div>
-      <div id="video-container" style="border:1px solid" class="col">
+      <div class="col" id="video-container" style="border:1px solid">
         <video id="pose-video" class="layer" playsinline></video>
         <canvas id="pose-canvas" class="layer"></canvas>
-      <div id="pose-result" class="layer"></div>
-  </div>
+        <div id="pose-result" class="layer"></div>
+      </div>
    </div>
-   <div id="text-container"><div id="info-text" class="layer">Para Iniciar o APP, clique em "Iniciar App".</div></div>
+   <div id="text-container">
+      <div id="info-text" >Para Iniciar o APP, clique em "Iniciar App".</div>
+      <p>Você pode alternar as predições entre <b>Video</b> e <b>Imagem</b> nos botões no canto superior direito. Você poderá fazer predições carregando uma imagem através do
+      botão acima "Escolher arquivo". Atenção: Quando carregar uma imagem para predição, certificar-se que o botão Imagem no canto superior direito está ativo, o mesmo procedimento para predições em Video.
+      </p>
+      <div id="result-emoction"></div>
+   </div>
    
 </div>
 

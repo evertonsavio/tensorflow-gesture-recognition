@@ -33,7 +33,7 @@ body {
 }
 #info-text {
   padding: 10px;
-  font-size: 2vw;
+  font-size: 1.5vw;
   text-align: center;
 }
 
@@ -42,6 +42,15 @@ body {
 }
 #fileinput {
   visibility: visible;
+}
+
+p {
+  padding: 10px;
+}
+
+#result-emoction {
+  font-size: 30px;
+  text-align: center;
 }
 
 .layer {

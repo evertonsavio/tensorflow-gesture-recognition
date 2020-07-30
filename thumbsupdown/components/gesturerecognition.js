@@ -142,6 +142,7 @@ async function main () {
         console.log (gestureStrings[result.name]);
 
         resultLayer.innerText = gestureStrings[result.name];
+        infoText.innerText = `Predição: ${gestureStrings[result.name]}`;
       }
     }
 
