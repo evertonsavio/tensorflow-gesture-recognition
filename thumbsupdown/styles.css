@@ -16,12 +16,25 @@ body {
 body {
   margin: 0;
   padding: 0;
+  overflow: scroll;
 }
 
 #video-container {
   width: 640px;
   height: 480px;
   position: relative;
+}
+#text-container {
+  width: 100%;
+  height: 280px;
+  position: relative;
+  border: 1px solid white;
+  margin-top: 20px;
+}
+#info-text {
+  padding: 10px;
+  font-size: 2vw;
+  text-align: center;
 }
 
 #btnApp {
