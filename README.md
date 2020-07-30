@@ -1,11 +1,20 @@
 # Gesture_Recognition  
-
-* Dockerfile  
+  
+### Instruções:  
+* Abrir a pasta thumbsupdown, clicar em index.html  
+--------------------
+  
+* Caso queira usar por imagem docker, na pasta thumbsupdown executar o comando no terminal:   
 ```
-FROM nginx:alpine
-COPY . /usr/share/nginx/html```  
+docker build -t webserver-image:v1 .  
+```
+* Em seguida rodar o comando:  
+```
+docker run -d -p 3000:80 webserver-image:v1
+```  
+* Abrir o navegador em localhost:3000  
+--------------------  
+### Utilização  
 
-* CLI on folder ```docker build -t webserver-image:v1 .```
-```sudo docker images```   
-```docker run -d -p 80:80 webserver-image:v1```
-```curl docker```  
+* A seguinte tea irá subir:  
+![image info](./images/app.png)
