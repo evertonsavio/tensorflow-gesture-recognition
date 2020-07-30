@@ -105,6 +105,7 @@ async function main () {
   const estimateHands = async () => {
     ctx.clearRect (0, 0, config.video.width, config.video.height);
     resultLayer.innerText = '⭕';
+    infoText.innerText = `Predição: ⭕`;
 
     const canvasimg = document.querySelector ('canvas');
     const canvasctx = canvasimg.getContext ('2d');
