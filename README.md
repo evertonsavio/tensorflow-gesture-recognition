@@ -34,6 +34,7 @@ docker run -d -p 3000:80 webserver-image:v1
 ![image info](./images/modelo.png)  
   
 * As predições Thumbs Up Thumbs Down estao prontas para serem feitas em Video.  
+  
 ![image info](./images/predicao.png)  
    
  * Para fazer predições em imagens, no canto superior direito tem um botão para selecionar, clique em Imagem. Logo depois selecione sua imagem pelo botão "Escolher arquivo".
