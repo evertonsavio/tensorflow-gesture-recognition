@@ -12,7 +12,7 @@ sudo docker build -t webserver-image:v1 .
 ```
 sudo docker run -d -p 3000:80 webserver-image:v1
 ```  
-* Abrir o navegador em localhost:3000  
+* Abrir o navegador (GOOGLE CHROME) em localhost:3000  
 --------------------  
 ### Utilização  
 
